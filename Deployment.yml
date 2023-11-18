@@ -1,0 +1,20 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: linuxworld
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: lworld
+  template:
+    metadata:
+      labels:
+        app: lworld
+    spec:
+      containers:
+        - name: linuxworldc
+          image: gautam19nov1991/pipeline-demo
+          imagePullPolicy: Always
+          ports:
+            - containersPort: 80

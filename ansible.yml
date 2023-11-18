@@ -4,8 +4,8 @@
   # - name: delete old deployment
   #   command: kubectl delete --kubeconfig=/home/ubuntu/.kube/config -f /home/ubuntu/Deployment.yml
   # - name: delete old service
-  #   command: kubectl delete --kubeconfig=/home/ubuntu/.kube/config -f /home/ubuntu/Service.yml
+  #   command: kubectl delete --kubeconfig=/home/ubuntu/.kube/config -f /home/ubuntu/service.yml
    - name: create new deployment
      command: kubectl apply --kubeconfig=/home/ubuntu/.kube/config -f /home/ubuntu/Deployment.yml
    - name: create new service
-     command: kubectl apply --kubeconfig=/home/ubuntu/.kube/config -f /home/ubuntu/Service.yml
+     command: kubectl apply --kubeconfig=/home/ubuntu/.kube/config -f /home/ubuntu/service.yml

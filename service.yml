@@ -9,4 +9,4 @@ spec:
       nodePort: 31200
   selector:
     app: lworld
-  type: LoadBalancer
+  type: NodePort
